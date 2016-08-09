@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Docker Con 2016</title>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <meta property="og:site_name" content="dockercon">
+    <meta property="og:title" content="dockercon">
+    <meta property="og:locale" content="lima">
+    <meta name="description" content="DockerConLima 2016">
+    <meta property="og:description" content="DockerConLima 2016">
+    <meta property="og:image" content="images/maskot.png">
+    <meta property="og:url" content="http://www.dockerconlima.com">
+
+    <link rel="author" href="" />
+
+
+
+    <!-- Attaching Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Attaching Google Material Design Elements -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- jQuery Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
+    <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCkLCdCVLLcA_HRp0CEsCjS6EyhPPzEiI"></script>
+    <script>
+      function initialize() {
+        var myLatLng = {lat: -12.0968466, lng: -77.0391154}
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(myLatLng),
+          zoom: 17,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Microsoft Perú'
+        })
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <!-- Attaching Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/application.js"></script>
+
+    <!-- Attaching Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Attaching Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+
+    <!--<link rel="stylesheet" href="cs
+    s/lightbox.min.css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" />-->
+
+    <!--<link rel="stylesheet" href="css/rev-slider.css" />-->
+    <!--<link rel="stylesheet" href="css/owl.carousel.css">-->
+    <!--
+    <link rel="stylesheet" href="css/spacings.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animate.css" />-->
+
+  </head>
+
+  <body>
+      <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+      <nav class="navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <!-- Navbar-Header -->
+                      <div class="navbar-header">
+
+                          <!-- Mobile Menu -->
+                          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                              <i class="fa fa-bars"></i>
+                          </button>
+
+                          <!--Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200) -->
+
+                          <a href="#top" class="navbar-brand img-logo scrollto" title="DockerCon 2016 Lima">
+                            <span class="helper">
+                              <img src="images/dockercon16.png" width="160" alt="DockerCon 2016 Lima">
+                            </span>
+                          </a>
+
+                      </div><!-- /End Navbar-Header -->
+
+                      <!-- Navbar-Collapse -->
+                      <div class="navbar-collapse collapse">
+                          <ul class="nav navbar-nav navbar-right">
+                              <!-- Menu Items -->
+                              <li><a href="index.html" title="" class="scrollto">DockerConLima</a></li>
+                              <li><a href="agenda.html" title="" class="scrollto">Agenda</a></li>
+                              <li><a href="http://www.meetup.com/es-ES/Docker-Lima/events/232592242/" target="_blank" title="" class="scrollto">Registro</a></li>
+                          </ul>
+                      </div><!-- /End Navbar-Collapse -->
+                  </div><!-- /End Col -->
+              </div><!-- /End Row -->
+          </div><!-- /End Container -->
+      </nav><!-- /End Sticky Navigation -->
+    </div>
+
+    <section id="home" class="intro">
+      <div class="mdl-grid static-info">
+        <div class="mdl-cell mdl-cell--7-col mdl-cell--4-col-tablet mdl-cell--3-col-phone">
+          <p class="dates" style="margin-top:50px">13 Agosto    Lima</p>
+
+          <p class="home-info">Te perdiste el DockerCon16 en Seatle. No te preocupes. Te esperamos el 13 Agosto</p>
+
+          <p>Interactúa con nosotros #dockerconlima</p>
+          <!-- Flat button -->
+
+          <a href="http://www.meetup.com/es-ES/Docker-Lima/" class="mdl-button mdl-js-button mdl-button--raised scrollto " target="_blank">Registro</a>
+        </div>
+
+      </div>
+    </section>
+    <section class="">
+    </section>
+
+
+
+
+    <section class="section-secondary section-shadow">
+      <!-- Colored FAB button -->
+
+    </section>
+
+
+    <section id="register" class="section-primary graybg">
+      <div class="static-info text-center">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vE1iDPx6-Ok" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="margin-top:50px">
+            <H3>Registrate #dockerconlima !!!</H3>
+            <H4>DockerCon Lima 2016 es una conferencia centrada en Docker.</br> Organizada por la comunidad DockerLima</br> Te esperamos !!!</H4>
+            <ul style="list-style-type:none;">
+              <li>
+                <a href="https://www.facebook.com/dockerlima" target="_blank"><i class="fa fa-facebook-square fa-2x" style="color:#757575"></i></a>
+                <a href="https://twitter.com/dockerlima" target="_blank"><i class="fa fa-twitter-square fa-2x" style="color:#757575"></i></a>
+            </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+
+
+      </div>
+    </section>
+    <div class="line"></div>
+    <section id="speakers" class="section-secondary section-shadow">
+      <div class="static-info text-center">
+        <H3 style="color:#fff">Expositores</H3>
+        <div id="speakers-list" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./images/speakers/calvarad.jpeg" height="200px">
+            <h4>Cesar Alvarado</h4>
+          </div>
+          <div class="item"><img src="./images/speakers/dsusanibar.jpg" height="200px"><h4>Dali Susanibar</h4></div>
+          <div class="item"><img src="./images/speakers/rhugo.jpg" height="200px"><h4>Hugo Raul</h4></div>
+          <div class="item"><img src="./images/speakers/libarra.jpg" height="200px"><h4>Luis Michael Ibarra</h4></div>
+          <div class="item"><img src="./images/speakers/minga.jpeg" height="200px"><h4>Mario Inga</h4></div>
+          <div class="item"><img src="./images/speakers/emelendez.jpg" height="200px"><h4>Eddu Melendez</h4></div>
+          <div class="item"><img src="./images/speakers/hpaz.jpg" height="200px"><h4>Hector Paz</h4></div>
+          <div class="item"><img src="./images/speakers/myarleque.jpg" height="200px"><h4>Milton Yarleque</h4></div>
+          <div class="item"><img src="./images/speakers/jquicalte.jpg" height="200px"><h4>Jorge Quilcate</h4></div>
+          <div class="item"><img src="./images/speakers/anunez.jpg" height="200px"><h4>Angel Nuñez</h4></div>
+          <div class="item"><img src="./images/speakers/ecardenas.jpg" height="200px"><h4>Ernesto Cardenas</h4></div>
+        </div>
+        <a href="" class="mdl-button mdl-js-button mdl-button--raised mdl-button--white" style="margin-top:20px">Expositores</a>
+      </div>
+    </section>
+<!--
+    <section id="news" class="section-primary">
+      <div class="static-info">
+      NEWS
+      </div>
+    </section>
+
+    <section id="social" class="section-secondary section-shadow">
+      <div class="static-info">
+      SOCIAL
+      </div>
+    </section>
+-->
+    <section id="venue" class="section-primary graybg" style="padding-top:80px;">
+      <div class="static-info text-center">
+      <H3>Lugar</H3>
+      <h4>Microsoft Perú, Av.Victor Andres Belaunde 147, San Isidro</h4>
+      <div id="map" style="max-width: 1280px; height: 500px"></div>
+      </div>
+    </section>
+    <div class="line"></div>
+    <section id="partners" class="section-primary">
+      <div class="static-info text-center">
+        <H3>AUSPICIADORES</H3>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+            <H4>Platinum sponsor</H4>
+              <a href="https://www.docker.com/" target="_blank"><img src="./images/partners/docker2.png" height="100px" alt="Docker"></a>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <H4>Golden sponsor</H4>
+          </div>
+       </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <a href="https://www.microsoft.com/es-pe/" target="_blank"><img src="./images/partners/microsoft04.png"  height="80px" alt="Microsoft"></a>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <a href="https://www.ibm.com/pe-es/" target="_blank"><img src="./images/partners/ibm2.png" height="80px" alt="IBM"></a>
+          </div>
+        </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+            <H4>Silver Sponsor </H4>
+              <a href="http://www.kleer.la/" target="_blank"><img src="./images/partners/kleer.png" height="60px" alt="Keeler"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+<!--    <script type="text/javascript" src="js/canvas-vas.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.21/gmaps.min.js"></script>
+    <!--  <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/rev-slider.js"></script>-->
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+
+  </body>
+</html>
